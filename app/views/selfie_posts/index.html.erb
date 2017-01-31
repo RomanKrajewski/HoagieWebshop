@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Selfie Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Picture url</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @selfie_posts.each do |selfie_post| %>
+      <tr>
+        <td><%= selfie_post.description %></td>
+        <td><%= selfie_post.picture_url %></td>
+        <td><%= selfie_post.User %></td>
+        <td><%= link_to 'Show', selfie_post %></td>
+        <td><%= link_to 'Edit', edit_selfie_post_path(selfie_post) %></td>
+        <td><%= link_to 'Destroy', selfie_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Selfie Post', new_selfie_post_path %>

@@ -1,0 +1,1 @@
+json.partial! "selfie_posts/selfie_post", selfie_post: @selfie_post

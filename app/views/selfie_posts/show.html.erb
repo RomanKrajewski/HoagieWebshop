@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @selfie_post.description %>
+</p>
+
+<p>
+  <strong>Picture url:</strong>
+  <%= @selfie_post.picture_url %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @selfie_post.User %>
+</p>
+
+<%= link_to 'Edit', edit_selfie_post_path(@selfie_post) %> |
+<%= link_to 'Back', selfie_posts_path %>

@@ -1,0 +1,32 @@
+<%= form_for(selfie_post) do |f| %>
+  <% if selfie_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(selfie_post.errors.count, "error") %> prohibited this selfie_post from being saved:</h2>
+
+      <ul>
+      <% selfie_post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :picture_url %>
+    <%= f.text_field :picture_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :User_id %>
+    <%= f.text_field :User_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

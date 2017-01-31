@@ -1,0 +1,1 @@
+json.array! @selfie_posts, partial: 'selfie_posts/selfie_post', as: :selfie_post
