@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170131232716) do
+ActiveRecord::Schema.define(version: 20170201091236) do
 
   create_table "drinks", force: :cascade do |t|
     t.string   "name"
@@ -34,6 +34,20 @@ ActiveRecord::Schema.define(version: 20170131232716) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "ingredients_and_sandwiches", force: :cascade do |t|
+    t.integer "sandwiches_id"
+    t.integer "ingredients_id"
+    t.index ["ingredients_id"], name: "index_ingredients_and_sandwiches_on_ingredients_id"
+    t.index ["sandwiches_id"], name: "index_ingredients_and_sandwiches_on_sandwiches_id"
+  end
+
+  create_table "order_and_sandwiches", force: :cascade do |t|
+    t.integer "sandwiches_id"
+    t.integer "orders_id"
+    t.index ["orders_id"], name: "index_order_and_sandwiches_on_orders_id"
+    t.index ["sandwiches_id"], name: "index_order_and_sandwiches_on_sandwiches_id"
+  end
+
   create_table "orders", force: :cascade do |t|
     t.string   "extras"
     t.decimal  "price"
@@ -41,6 +55,13 @@ ActiveRecord::Schema.define(version: 20170131232716) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["User_id"], name: "index_orders_on_User_id"
+  end
+
+  create_table "orders_and_drinks", force: :cascade do |t|
+    t.integer "order_id"
+    t.integer "drink_id"
+    t.index ["drink_id"], name: "index_orders_and_drinks_on_drink_id"
+    t.index ["order_id"], name: "index_orders_and_drinks_on_order_id"
   end
 
   create_table "payments", force: :cascade do |t|
