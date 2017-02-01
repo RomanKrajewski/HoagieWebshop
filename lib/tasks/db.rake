@@ -13,6 +13,13 @@ namespace :db do
     #   FactoryGirl.create(:order, user: u)
     # end
     FactoryGirl.create(:ingredient)
+    FactoryGirl.create(:ingredient2)
+
+    FactoryGirl.create(:drink)
+    FactoryGirl.create(:drink2)
+
+    FactoryGirl.create(:sandwich)
+    FactoryGirl.create(:sandwich2)
     puts "Done!"
   end
 end
