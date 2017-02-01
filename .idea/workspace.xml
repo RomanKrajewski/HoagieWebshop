@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43dc88cf-386a-41f1-b2b5-eaa600a6b582" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/drink.rb" afterPath="$PROJECT_DIR$/app/models/drink.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ingredient.rb" afterPath="$PROJECT_DIR$/app/models/ingredient.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/order.rb" afterPath="$PROJECT_DIR$/app/models/order.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/sandwich.rb" afterPath="$PROJECT_DIR$/app/models/sandwich.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,17 +88,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170201085750_create_orders_and_drinks.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="20170201085750_create_orders_and_drinks.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20170201085750_create_orders_and_drinks.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="8" column="0" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RailsDependency/User" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RailsDependency/User" pinned="false" current-in-tab="true">
         <entry file="uml://RailsDependency/User">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
@@ -113,10 +109,10 @@
                 <node x="932.5" y="245.0">Employee</node>
                 <node x="311.0" y="206.8235294117647">Order</node>
                 <node x="959.5" y="151.0">Payment</node>
-                <node x="930.5" y="380.0">Ingredient</node>
+                <node x="933.5" y="362.0">Ingredient</node>
                 <node x="929.0" y="0.0">SelfiePost</node>
                 <node x="1239.0" y="220.0">ApplicationRecord</node>
-                <node x="582.0" y="260.3235294117647">Sandwich</node>
+                <node x="566.0" y="259.3235294117647">Sandwich</node>
                 <node x="30.0" y="294.0735294117647">Drink</node>
               </nodes>
               <notes />
@@ -179,8 +175,10 @@
                   <point x="-72.0" y="-12.428571428571416" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="228.5" y="180.0" />
-              <SelectedNodes />
+              <settings layout="Hierarchic Group" zoom="1.0" x="691.5" y="243.5" />
+              <SelectedNodes>
+                <node>Sandwich</node>
+              </SelectedNodes>
               <Categories>
                 <Category>Migration fields</Category>
                 <Category>Association fields</Category>
@@ -212,8 +210,8 @@
       <file leaf-file-name="20170201091236_create_order_and_sandwiches.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20170201091236_create_order_and_sandwiches.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -635,12 +633,12 @@
       <option name="presentableId" value="Default" />
       <updated>1485891308409</updated>
       <workItem from="1485891309844" duration="13855000" />
-      <workItem from="1485937825638" duration="3353000" />
+      <workItem from="1485937825638" duration="4156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17208000" />
+    <option name="totallyTimeSpent" value="18011000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -939,14 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170201091001_create_ingredients_and_sandwiches.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/sandwich.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -955,10 +945,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/order.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170201091236_create_order_and_sandwiches.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170201091001_create_ingredients_and_sandwiches.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170201085750_create_orders_and_drinks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -973,10 +987,10 @@
             <node x="932.5" y="245.0">Employee</node>
             <node x="311.0" y="206.8235294117647">Order</node>
             <node x="959.5" y="151.0">Payment</node>
-            <node x="930.5" y="380.0">Ingredient</node>
+            <node x="933.5" y="362.0">Ingredient</node>
             <node x="929.0" y="0.0">SelfiePost</node>
             <node x="1239.0" y="220.0">ApplicationRecord</node>
-            <node x="582.0" y="260.3235294117647">Sandwich</node>
+            <node x="566.0" y="259.3235294117647">Sandwich</node>
             <node x="30.0" y="294.0735294117647">Drink</node>
           </nodes>
           <notes />
@@ -1039,28 +1053,14 @@
               <point x="-72.0" y="-12.428571428571416" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="228.5" y="180.0" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="1.0" x="691.5" y="243.5" />
+          <SelectedNodes>
+            <node>Sandwich</node>
+          </SelectedNodes>
           <Categories>
             <Category>Migration fields</Category>
             <Category>Association fields</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/order.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170201085750_create_orders_and_drinks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
