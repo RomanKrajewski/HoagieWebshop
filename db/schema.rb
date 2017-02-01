@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170201091236) do
+ActiveRecord::Schema.define(version: 20170201100256) do
+
+  create_table "bread_and_sandwiches", force: :cascade do |t|
+    t.integer "sandwiches_id"
+    t.integer "bread_id"
+    t.index ["bread_id"], name: "index_bread_and_sandwiches_on_bread_id"
+    t.index ["sandwiches_id"], name: "index_bread_and_sandwiches_on_sandwiches_id"
+  end
+
+  create_table "breads", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "drinks", force: :cascade do |t|
     t.string   "name"
@@ -74,6 +88,20 @@ ActiveRecord::Schema.define(version: 20170201091236) do
   create_table "sandwiches", force: :cascade do |t|
     t.string   "bread_type"
     t.string   "sauce"
+    t.decimal  "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sandwiches_and_sauces", force: :cascade do |t|
+    t.integer "sandwiches_id"
+    t.integer "sauces_id"
+    t.index ["sandwiches_id"], name: "index_sandwiches_and_sauces_on_sandwiches_id"
+    t.index ["sauces_id"], name: "index_sandwiches_and_sauces_on_sauces_id"
+  end
+
+  create_table "sauces", force: :cascade do |t|
+    t.string   "name"
     t.decimal  "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :sauces
+  resources :breads
   resources :selfie_posts
   resources :orders
   resources :users
