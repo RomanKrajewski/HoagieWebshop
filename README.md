@@ -10,7 +10,7 @@ This is a Web Shop for Hoagies put together in just two days. It is a project fo
 
 Ruby Version: 2.4.0
 Rails Version: 5.0.1
-Database System SQLite 3.0
+Database System SQLite 3.0--
 
 
                     _.---._
